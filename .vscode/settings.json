@@ -1,2 +1,11 @@
 {
+    "git.autofetch": true,
+    "code-runner.runInTerminal": true,
+    "terminal.integrated.automationShell.windows": "powershell.exe",
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -lglfw3 -lopengl32 -lgdi32 -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    }
 }
